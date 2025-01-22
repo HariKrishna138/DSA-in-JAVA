@@ -1,6 +1,8 @@
-class merge{
+import java.util.*;
+class one{
     public static void merge(int a[],int low,int mid,int high){
-        i=low;j=mid+1;k=low;
+        int i=low,j=mid+1,k=low;
+        int b[]=new int[high+1];
         while((i<=mid)&&(j<=high)){
             if(a[i]<a[j]){
                 b[k]=a[i];
@@ -10,23 +12,22 @@ class merge{
                 b[k]=a[j];
                 j+=1;
             }
+            k++;
         }
         while(i<=mid){
             b[k]=a[i];
             i+=1;
             k+=1;
         }
-        while(j<=mid){
+        while(j<=high){
             b[k]=a[j];
             j+=1;
             k+=1;
         }
-        for(int h=low;h<high;h++){
+        for(int h=low;h<=high;h++){
             a[h]=b[h];
         }
     }
-}
-class 1{
     public static void mergesort(int a[],int low,int high){
         if(low<high){
             int mid=(low+high)/2;
@@ -42,7 +43,7 @@ class 1{
         int a[]=new int[n];
         int low=0,high=n-1;
         System.out.println("Enter Array Elements:");
-        for(int i=o;i<n;i++){
+        for(int i=0;i<n;i++){
             a[i]=sc.nextInt();
         }
         mergesort(a,low,high);
