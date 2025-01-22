@@ -1,5 +1,5 @@
 import java.util.*;
-class one{
+class mergesort1{
     public static void merge(int a[],int low,int mid,int high){
         int i=low,j=mid+1,k=low;
         int b[]=new int[high+1];
