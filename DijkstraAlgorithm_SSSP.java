@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class DijkstraAlgorithm{
+public class DijkstraAlgorithm_SSSP{
     static final int INF=999;//using 999 as infinity
     private static int chooseMinVertex(int[] dist,boolean[] s,int n){
         int minIndex=-1,min =INF;
