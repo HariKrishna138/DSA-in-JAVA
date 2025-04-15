@@ -18,7 +18,7 @@ public class fractionalknapsack{
         int i=n,j=m;
         while(i>0 && j>0){
             if(k[i][j]==k[i-1][j]){
-                System.out.println("index"+i+"0");
+                System.out.println("index: "+i+"0");
                 i--;
             }
             else{
